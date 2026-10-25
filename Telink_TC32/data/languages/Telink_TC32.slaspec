@@ -181,7 +181,7 @@ write_list4: write_list3  		is thc0404=0 & write_list3				    { }
 write_list5: r3                 is thc0303=1 & write_list4 & r3 & thc0407=0	{ * mult_addr=r3; mult_addr = mult_addr - 4; }
 write_list5: r3^"," write_list4 is thc0303=1 & write_list4 & r3             { * mult_addr=r3; mult_addr = mult_addr - 4; }
 write_list5: write_list4  		is thc0303=0 & write_list4				    { }
-write_list6: r2                 is thc0202=1 & write_list5 & r2 & thc0407=0	{ * mult_addr=r2; mult_addr = mult_addr - 4; }
+write_list6: r2                 is thc0202=1 & write_list5 & r2 & thc0307=0	{ * mult_addr=r2; mult_addr = mult_addr - 4; }
 write_list6: r2^"," write_list5 is thc0202=1 & write_list5 & r2             { * mult_addr=r2; mult_addr = mult_addr - 4; }
 write_list6: write_list5  		is thc0202=0 & write_list5				    { }
 write_list7: r1                 is thc0101=1 & write_list6 & r1 & thc0207=0	{ * mult_addr=r1; mult_addr = mult_addr - 4; }
@@ -205,7 +205,7 @@ write_list_inc4: write_list_inc3  		is thc0404=0 & write_list_inc3				    { }
 write_list_inc5: r3                 is thc0303=1 & write_list_inc4 & r3 & thc0407=0	{ * mult_addr=r3; mult_addr = mult_addr + 4; }
 write_list_inc5: r3^"," write_list_inc4 is thc0303=1 & write_list_inc4 & r3             { * mult_addr=r3; mult_addr = mult_addr + 4; }
 write_list_inc5: write_list_inc4  		is thc0303=0 & write_list_inc4				    { }
-write_list_inc6: r2                 is thc0202=1 & write_list_inc5 & r2 & thc0407=0	{ * mult_addr=r2; mult_addr = mult_addr + 4; }
+write_list_inc6: r2                 is thc0202=1 & write_list_inc5 & r2 & thc0307=0	{ * mult_addr=r2; mult_addr = mult_addr + 4; }
 write_list_inc6: r2^"," write_list_inc5 is thc0202=1 & write_list_inc5 & r2             { * mult_addr=r2; mult_addr = mult_addr + 4; }
 write_list_inc6: write_list_inc5  		is thc0202=0 & write_list_inc5				    { }
 write_list_inc7: r1                 is thc0101=1 & write_list_inc6 & r1 & thc0207=0	{ * mult_addr=r1; mult_addr = mult_addr + 4; }

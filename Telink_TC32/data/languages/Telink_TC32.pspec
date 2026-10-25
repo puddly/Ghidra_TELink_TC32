@@ -111,8 +111,8 @@
     <symbol name="reg_usb_ep5_dat" address="RAM:0x80011d"/>
     <symbol name="reg_usb_ep6_dat" address="RAM:0x80011e"/>
     <symbol name="reg_usb_ep7_dat" address="RAM:0x80011f"/>
-    <symbol name="reg_usb_mic_dat0" address="RAM:0x80RAM:0x801800"/>
-    <symbol name="reg_usb_mic_dat1" address="RAM:0x80RAM:0x801802"/>
+    <symbol name="reg_usb_mic_dat0" address="RAM:0x801800"/>
+    <symbol name="reg_usb_mic_dat1" address="RAM:0x801802"/>
     <symbol name="reg_usb_ep8_ctrl" address="RAM:0x800120"/>
     <symbol name="reg_usb_ep1_ctrl" address="RAM:0x800121"/>
     <symbol name="reg_usb_ep2_ctrl" address="RAM:0x800122"/>
